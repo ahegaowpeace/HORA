@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\CalcFunc.cs" />
      <Compile Include="Assets\DeleteFunc.cs" />
+     <Compile Include="Assets\YakuSelectFunc.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
