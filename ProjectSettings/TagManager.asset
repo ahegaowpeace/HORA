@@ -6,6 +6,35 @@ TagManager:
   tags:
   - 1han
   - 2han
+  - Lon
+  - Tsumo
+  - Naita
+  - Naitenai
+  - Ko
+  - Oya
+  - NobePenKanTan
+  - NoHuMachi
+  - 2Hu_Janto
+  - 4Hu_Janto
+  - 0Hu_Janto
+  - DoraPlus
+  - DoraMinus
+  - ChunChanMinkoPlus
+  - ChunChanMinkoMinus
+  - ChunChanAnkoPlus
+  - ChunChanAnkoMinus
+  - ChunChanMinkanPlus
+  - ChunChanMinkanMinus
+  - ChunChanAnkanPlus
+  - ChunChanAnkanMinus
+  - YaoChuMinkoPlus
+  - YaoChuMinkoMinus
+  - YaoChuAnkoPlus
+  - YaoChuAnkoMinus
+  - YaoChuMinkanPlus
+  - YaoChuMinkanMinus
+  - YaoChuAnkanPlus
+  - YaoChuAnkanMinus
   layers:
   - Default
   - TransparentFX

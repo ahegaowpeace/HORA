@@ -44,6 +44,5 @@ public class YakuSelectFunc : MonoBehaviour {
 				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 6;
 			}
 		}
-		Debug.Log (refRes.GetComponent<CalcFunc> ().hansu);
 	}
 }

@@ -1,11 +1,33 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\YakuSelectFunc.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonCountFunc.cs">
     <Files>
-      <File FileName="Assets\CalcFunc.cs" Line="9" Column="22" />
+      <File FileName="Assets\CalcFunc.cs" Line="33" Column="29" />
       <File FileName="Assets\DeleteFunc.cs" Line="4" Column="1" />
-      <File FileName="Assets\YakuSelectFunc.cs" Line="13" Column="5" />
+      <File FileName="Assets\YakuSelectFunc.cs" Line="46" Column="4" />
+      <File FileName="Assets\AgariFunc.cs" Line="27" Column="5" />
+      <File FileName="Assets\NakiFunc.cs" Line="4" Column="1" />
+      <File FileName="Assets\OyakoFunc.cs" Line="8" Column="1" />
+      <File FileName="Assets\MachiFunc.cs" Line="4" Column="1" />
+      <File FileName="Assets\JantoFunc.cs" Line="26" Column="38" />
+      <File FileName="Assets\ButtonCountFunc.cs" Line="84" Column="60" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HORA" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="ButtonCountFunc.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="HORA" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
