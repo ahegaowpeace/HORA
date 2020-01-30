@@ -8,6 +8,8 @@ public class DeleteFunc : MonoBehaviour {
 	GameObject refRes;
 	private GameObject tmpdelgameobj;
 	private Toggle[] yakuToggles;
+	private Text koPointsText;
+	private Text oyaPointsText;
 
 	private Button DeleteButton;
 
@@ -66,13 +68,17 @@ public class DeleteFunc : MonoBehaviour {
 		tmpdelgameobj = GameObject.Find ("ToggleNobePenKanTan");
 		tmpdelgameobj.GetComponent<Toggle> ().isOn = true;
 		// 役セレクトリセット
-
 		tmpdelgameobj = GameObject.Find("ScrollView");
-
 		yakuToggles = tmpdelgameobj.GetComponentsInChildren<Toggle> ();
 		foreach(var a in yakuToggles) {
 			a.isOn = false;
 		}
-
+		// リザルトビューリセット
+		tmpdelgameobj = GameObject.Find("Result");
+		koPointsText = tmpdelgameobj.GetComponent<Text> ();
+		tmpdelgameobj = GameObject.Find("Result2");
+		oyaPointsText = tmpdelgameobj.GetComponent<Text> ();
+		koPointsText.text = "0";
+		oyaPointsText.text = "0";
 	}
 }
