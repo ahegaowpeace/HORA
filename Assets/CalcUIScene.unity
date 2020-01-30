@@ -217,7 +217,7 @@ RectTransform:
   - {fileID: 88813083}
   - {fileID: 631937045}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 28190198}
   - component: {fileID: 28190197}
   m_Layer: 5
-  m_Name: Text
+  m_Name: yaochuankoNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1200
+  m_Text: 0
 --- !u!222 &31746107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1606,6 +1606,7 @@ MonoBehaviour:
   hansu: 0
   husu: 0
   dora: 0
+  totalhansu: 0
   pooints: 0
   oyaFlag: 0
   tsumoFlag: 0
@@ -1704,7 +1705,7 @@ GameObject:
   - component: {fileID: 181428910}
   - component: {fileID: 181428909}
   m_Layer: 5
-  m_Name: Text
+  m_Name: chunchanminkoNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,7 +2495,7 @@ RectTransform:
   m_Children:
   - {fileID: 568855206}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2896,7 +2897,7 @@ RectTransform:
   - {fileID: 140288254}
   - {fileID: 639793716}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4160,7 +4161,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1110189727}
-  - {fileID: 1171379078}
   - {fileID: 1443372710}
   - {fileID: 1040358282}
   - {fileID: 310853876}
@@ -4170,6 +4170,7 @@ RectTransform:
   - {fileID: 362512074}
   - {fileID: 1345653553}
   - {fileID: 1684162826}
+  - {fileID: 1171379078}
   - {fileID: 173872776}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -4258,7 +4259,7 @@ GameObject:
   - component: {fileID: 550837756}
   - component: {fileID: 550837755}
   m_Layer: 5
-  m_Name: Text
+  m_Name: doraNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4452,7 +4453,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 551431873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32556bb05ca2084bbdba9eeb720cc8e, type: 3}
+  m_Script: {fileID: 11500000, guid: cff793e5d03a4ce4791c6595d176df1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &558257782
@@ -5847,7 +5848,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 717202283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32556bb05ca2084bbdba9eeb720cc8e, type: 3}
+  m_Script: {fileID: 11500000, guid: cff793e5d03a4ce4791c6595d176df1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &718793425
@@ -7511,7 +7512,7 @@ RectTransform:
   m_Children:
   - {fileID: 243164891}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7854,7 +7855,7 @@ GameObject:
   - component: {fileID: 1081850126}
   - component: {fileID: 1081850125}
   m_Layer: 5
-  m_Name: Text
+  m_Name: yaochuminkanNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7929,7 +7930,7 @@ GameObject:
   - component: {fileID: 1110189730}
   - component: {fileID: 1110189729}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: ScrollView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8207,7 +8208,7 @@ RectTransform:
   m_Children:
   - {fileID: 150898315}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 1
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9128,7 +9129,7 @@ GameObject:
   - component: {fileID: 1334185444}
   - component: {fileID: 1334185443}
   m_Layer: 5
-  m_Name: Text
+  m_Name: yaochuminkoNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9221,7 +9222,7 @@ RectTransform:
   - {fileID: 1929302639}
   - {fileID: 113104669}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9320,7 +9321,7 @@ GameObject:
   - component: {fileID: 1354851660}
   - component: {fileID: 1354851659}
   m_Layer: 5
-  m_Name: Text
+  m_Name: yaochuankanNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9767,7 +9768,7 @@ RectTransform:
   m_Children:
   - {fileID: 1350800656}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9840,7 +9841,7 @@ RectTransform:
   - {fileID: 1922155732}
   - {fileID: 2042936806}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10071,7 +10072,7 @@ GameObject:
   - component: {fileID: 1537841151}
   - component: {fileID: 1537841150}
   m_Layer: 5
-  m_Name: Text
+  m_Name: chunchanminkanNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10800,7 +10801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2400
+  m_Text: 0
 --- !u!222 &1622735787
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10839,7 +10840,7 @@ RectTransform:
   - {fileID: 31746105}
   - {fileID: 1622735785}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11878,7 +11879,7 @@ RectTransform:
   - {fileID: 567183320}
   - {fileID: 1967826187}
   m_Father: {fileID: 548862948}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12123,7 +12124,7 @@ GameObject:
   - component: {fileID: 1985285156}
   - component: {fileID: 1985285155}
   m_Layer: 5
-  m_Name: Text
+  m_Name: chunchanankanNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12687,7 +12688,7 @@ GameObject:
   - component: {fileID: 2071977069}
   - component: {fileID: 2071977068}
   m_Layer: 5
-  m_Name: Text
+  m_Name: chunchanankoNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

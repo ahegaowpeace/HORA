@@ -8,6 +8,16 @@ public class ButtonCountFunc : MonoBehaviour {
 	GameObject refRes;
 
 	private Button button;
+	private GameObject tmpgameobj;
+
+	private Text chunchanminkoNum;
+	private Text chunchanankoNum;
+	private Text chunchanminkanNum;
+	private Text chunchanankanNum;
+	private Text yaochuminkoNum;
+	private Text yaochuankoNum;
+	private Text yaochuminkanNum;
+	private Text yaochuankanNum;
 
 	// 初期処理
 	// 計算結果ボタンオブジェクト取得
@@ -19,13 +29,7 @@ public class ButtonCountFunc : MonoBehaviour {
 
 	// ボタンが押されたら種類判定して値セット
 	public void ButtonClick() {
-		if (button.tag == "DoraPlus") {
-			refRes.GetComponent<CalcFunc> ().dora = refRes.GetComponent<CalcFunc> ().dora + 1;
-		} else if (refRes.GetComponent<CalcFunc> ().dora > 0) {
-			if (button.tag == "DoraMinus") {
-				refRes.GetComponent<CalcFunc> ().dora = refRes.GetComponent<CalcFunc> ().dora - 1;
-			}
-		} else if (button.tag == "ChunChanMinkoPlus") {
+		if (button.tag == "ChunChanMinkoPlus") {
 			refRes.GetComponent<CalcFunc> ().chunchanminko = refRes.GetComponent<CalcFunc> ().chunchanminko + 1;
 		} else if (button.tag == "ChunChanMinkoMinus") {
 			if (refRes.GetComponent<CalcFunc> ().chunchanminko > 0) {
@@ -74,13 +78,32 @@ public class ButtonCountFunc : MonoBehaviour {
 				refRes.GetComponent<CalcFunc> ().yaochuankan = refRes.GetComponent<CalcFunc> ().yaochuankan - 1;
 			}
 		}
-		Debug.Log (refRes.GetComponent<CalcFunc> ().chunchanminko);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().chunchananko);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().chunchanminkan);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().chunchanankan);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().yaochuminko);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().yaochuanko);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().yaochuminkan);
-		Debug.Log (refRes.GetComponent<CalcFunc> ().yaochuankan);
+			
+		// テキスト更新チュンチャンパイ面子数
+		tmpgameobj = GameObject.Find ("chunchanminkoNumText");
+		this.chunchanminkoNum = tmpgameobj.GetComponent<Text> ();
+		chunchanminkoNum.text = refRes.GetComponent<CalcFunc> ().chunchanminko.ToString();
+		tmpgameobj = GameObject.Find ("chunchanankoNumText");
+		this.chunchanankoNum = tmpgameobj.GetComponent<Text> ();
+		chunchanankoNum.text = refRes.GetComponent<CalcFunc> ().chunchananko.ToString();
+		tmpgameobj = GameObject.Find ("chunchanminkanNumText");
+		this.chunchanminkanNum = tmpgameobj.GetComponent<Text> ();
+		chunchanminkanNum.text = refRes.GetComponent<CalcFunc> ().chunchanminkan.ToString();
+		tmpgameobj = GameObject.Find ("chunchanankanNumText");
+		this.chunchanankanNum = tmpgameobj.GetComponent<Text> ();
+		chunchanankanNum.text = refRes.GetComponent<CalcFunc> ().chunchanankan.ToString();
+		// テキスト更新ヤオチューハイ面子数
+		tmpgameobj = GameObject.Find ("yaochuminkoNumText");
+		this.yaochuminkoNum = tmpgameobj.GetComponent<Text> ();
+		yaochuminkoNum.text = refRes.GetComponent<CalcFunc> ().yaochuminko.ToString();
+		tmpgameobj = GameObject.Find ("yaochuankoNumText");
+		this.yaochuankoNum = tmpgameobj.GetComponent<Text> ();
+		yaochuankoNum.text = refRes.GetComponent<CalcFunc> ().yaochuanko.ToString();
+		tmpgameobj = GameObject.Find ("yaochuminkanNumText");
+		this.yaochuminkanNum = tmpgameobj.GetComponent<Text> ();
+		yaochuminkanNum.text = refRes.GetComponent<CalcFunc> ().yaochuminkan.ToString();
+		tmpgameobj = GameObject.Find ("yaochuankanNumText");
+		this.yaochuankanNum = tmpgameobj.GetComponent<Text> ();
+		yaochuankanNum.text = refRes.GetComponent<CalcFunc> ().yaochuankan.ToString();
 	}
 }

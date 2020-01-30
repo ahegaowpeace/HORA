@@ -27,7 +27,6 @@ public class JantoFunc : MonoBehaviour {
 			} else {
 				refRes.GetComponent<CalcFunc> ().jantoFlag = 2;
 			}
-			Debug.Log (refRes.GetComponent<CalcFunc> ().jantoFlag);
 		}
 	}
 }

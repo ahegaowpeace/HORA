@@ -8,6 +8,7 @@ public class CalcFunc : MonoBehaviour {
 	public int hansu = 0;
 	public int husu = 0;
 	public int dora = 0;
+	public int totalhansu = 0;	// 加算ループ回避用
 	public int pooints = 0;
 
 	/*************************************************/
@@ -19,7 +20,7 @@ public class CalcFunc : MonoBehaviour {
 	/*************************************************/
 	public int oyaFlag = 0;
 	public int tsumoFlag = 0;
-	public int nakiFlag = 1;
+	public int nakiFlag;
 	public int jantoFlag = 0;
 	public int machiFlag = 0;
 
@@ -34,12 +35,54 @@ public class CalcFunc : MonoBehaviour {
 
 	// 初期処理
 	void Start () {
-		
+		nakiFlag = 1;
 	}
 	
 	// 点数計算関数
 	public void OnClick () {
-		Debug.Log("ボタンが押されました");
+		// 1.符計算
+		husu = 0;
+		// 基本符
+		husu = husu + 20;
+		// 上がり方
+		if (tsumoFlag == 0) {
+			// 門前加符
+			if (nakiFlag == 0) {
+				husu = husu + 10;
+			}
+		} else {
+			// ツモ符
+			husu = husu + 2;
+		}
+		// 面子の種類
+		husu = husu + (chunchanminko * 2);
+		husu = husu + (chunchananko * 4);
+		husu = husu + (chunchanminkan * 8);
+		husu = husu + (chunchanankan * 16);
+		husu = husu + (yaochuminko * 4);
+		husu = husu + (yaochuanko * 8);
+		husu = husu + (yaochuminkan * 16);
+		husu = husu + (yaochuankan * 32);
+		// 雀頭の種類
+		if (jantoFlag == 0) {
+			husu = husu + 2;
+		} else if (jantoFlag == 1) {
+			husu = husu + 2;			// 若しくは4符になる
+		}
+		// 待ちの種類
+		if (machiFlag == 0) {
+			husu = husu + 2;
+		}
+		// 切り上げ計算
+		float tmp = (float)husu / 10;
+		tmp = Mathf.CeilToInt (tmp);
+		tmp = tmp * 10;
+		husu = (int)tmp;
 
+		// 2.翻数
+		// ループ回避
+		totalhansu = hansu + dora;
+		Debug.Log (totalhansu);
+		totalhansu = 0;
 	}
 }

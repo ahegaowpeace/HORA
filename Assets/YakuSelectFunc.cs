@@ -32,16 +32,18 @@ public class YakuSelectFunc : MonoBehaviour {
 				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu + 6;
 			}
 		} else {
-			if (toggle.tag == "1han") {
-				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 1;
-			} else if (toggle.tag == "2han") {
-				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 2;
-			} else if (toggle.tag == "3han") {
-				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 3;
-			} else if (toggle.tag == "4han") {
-				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 4;
-			} else if (toggle.tag == "6han") {
-				refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 6;
+			if (refRes.GetComponent<CalcFunc> ().hansu > 0) {
+				if (toggle.tag == "1han") {
+					refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 1;
+				} else if (toggle.tag == "2han") {
+					refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 2;
+				} else if (toggle.tag == "3han") {
+					refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 3;
+				} else if (toggle.tag == "4han") {
+					refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 4;
+				} else if (toggle.tag == "6han") {
+					refRes.GetComponent<CalcFunc> ().hansu = refRes.GetComponent<CalcFunc> ().hansu - 6;
+				}
 			}
 		}
 	}

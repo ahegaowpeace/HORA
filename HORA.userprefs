@@ -1,33 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonCountFunc.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CalcFunc.cs">
     <Files>
-      <File FileName="Assets\CalcFunc.cs" Line="33" Column="29" />
-      <File FileName="Assets\DeleteFunc.cs" Line="4" Column="1" />
-      <File FileName="Assets\YakuSelectFunc.cs" Line="46" Column="4" />
-      <File FileName="Assets\AgariFunc.cs" Line="27" Column="5" />
-      <File FileName="Assets\NakiFunc.cs" Line="4" Column="1" />
-      <File FileName="Assets\OyakoFunc.cs" Line="8" Column="1" />
-      <File FileName="Assets\MachiFunc.cs" Line="4" Column="1" />
-      <File FileName="Assets\JantoFunc.cs" Line="26" Column="38" />
-      <File FileName="Assets\ButtonCountFunc.cs" Line="84" Column="60" />
+      <File FileName="Assets\CalcFunc.cs" Line="79" Column="18" />
+      <File FileName="Assets\DeleteFunc.cs" Line="74" Column="19" />
+      <File FileName="Assets\YakuSelectFunc.cs" Line="24" Column="89" />
+      <File FileName="Assets\AgariFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\NakiFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\OyakoFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\MachiFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\JantoFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\ButtonCountFunc.cs" Line="1" Column="1" />
+      <File FileName="Assets\DoraCountFunc.cs" Line="35" Column="67" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="HORA" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="ButtonCountFunc.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="HORA" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

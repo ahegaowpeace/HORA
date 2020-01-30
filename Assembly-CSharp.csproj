@@ -55,6 +55,7 @@
      <Compile Include="Assets\ButtonCountFunc.cs" />
      <Compile Include="Assets\CalcFunc.cs" />
      <Compile Include="Assets\DeleteFunc.cs" />
+     <Compile Include="Assets\DoraCountFunc.cs" />
      <Compile Include="Assets\JantoFunc.cs" />
      <Compile Include="Assets\MachiFunc.cs" />
      <Compile Include="Assets\NakiFunc.cs" />
