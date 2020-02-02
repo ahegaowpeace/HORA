@@ -35,6 +35,9 @@ TagManager:
   - YaoChuMinkanMinus
   - YaoChuAnkanPlus
   - YaoChuAnkanMinus
+  - 3han
+  - 4han
+  - 6han
   layers:
   - Default
   - TransparentFX
