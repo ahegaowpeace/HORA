@@ -15,6 +15,8 @@ public class CalcFunc : MonoBehaviour {
 	private int manganFlag = 0;	// 満貫フラグ
 	private string koPointsStr;
 	private string oyaPointsStr;
+	private Text hanNumText;
+	private Text huNumText;
 	private Text koPointsText;
 	private Text oyaPointsText;
 	private GameObject tmpgameobj;
@@ -218,10 +220,16 @@ public class CalcFunc : MonoBehaviour {
 		}
 
 		// テキスト更新
+		tmpgameobj = GameObject.Find("HanNum");
+		hanNumText = tmpgameobj.GetComponent<Text> ();
+		tmpgameobj = GameObject.Find("HuNum");
+		huNumText = tmpgameobj.GetComponent<Text> ();
 		tmpgameobj = GameObject.Find("Result");
 		koPointsText = tmpgameobj.GetComponent<Text> ();
 		tmpgameobj = GameObject.Find("Result2");
 		oyaPointsText = tmpgameobj.GetComponent<Text> ();
+		hanNumText.text = totalhansu.ToString () + "翻";
+		huNumText.text = husu.ToString () + "符";
 		koPointsText.text = koPointsStr;
 		oyaPointsText.text = oyaPointsStr;
 		// リセット
